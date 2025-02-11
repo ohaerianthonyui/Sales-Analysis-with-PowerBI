@@ -9,10 +9,11 @@ Business Requirements
 6.	Find out our customer base by region
 
 
+**Exploratory Data Analysis
 
-Created a DAX expression to create a date table using the CALENDAR function to cover the range between the minimum and maximum order dates from the Orders table, and then it adds an additional column to determine the "Start of Month" for each date
+*Created a DAX expression to create a date table using the CALENDAR function to cover the range between the minimum and maximum order dates from the Orders table, and then it adds an additional column to determine the "Start of Month" for each date
 
-The DAX formula you're working with calculates the percentage of returned orders. Here's a breakdown of how it works:
+The DAX formula  calculates the percentage of returned orders. Here's a breakdown of how it works:
 1.	VAR _total_orders = DISTINCTCOUNT(Orders[Order ID]):
 This variable calculates the total number of distinct orders from the Orders table. It counts the unique Order ID values in the Orders table.
 2.	VAR _returned_orders = DISTINCTCOUNT(Returns2[Order ID]):
